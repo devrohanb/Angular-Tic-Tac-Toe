@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-// Importing icons from fortawesome :
 import { faPen, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faCircle } from '@fortawesome/free-regular-svg-icons';
 
@@ -10,6 +9,12 @@ import { faCircle } from '@fortawesome/free-regular-svg-icons';
   styleUrls: ['./icon.component.css'],
 })
 export class IconComponent implements OnInit {
+  @Input() iconName: string;
+
+  faPen = faPen;
+  faTimes = faTimes;
+  faCircle = faCircle;
+
   constructor() {}
 
   ngOnInit(): void {}
